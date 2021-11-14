@@ -1,0 +1,18 @@
+{
+   "python.pythonPath": "C:\\Users\\LENOVO\\.virtualenvs\\movie_list_table_backend-4jdFKW4t\\Scripts\\python.exe",
+   "python.linting.pylintPath": "C:\\Users\\LENOVO\\.virtualenvs\\movie_list_table_backend-4jdFKW4t\\Scripts\\pylint",
+   "python.formatting.provider": "black",
+   "python.linting.pylintEnabled": false,
+   "python.linting.enabled": false,
+   "python.linting.pylintUseMinimalCheckers": false,
+   "python.linting.lintOnSave": false,
+   "editor.formatOnSave": true,
+   "workbench.editor.highlightModifiedTabs": true,
+   "python.testing.pytestArgs": ["tests"],
+   "python.testing.unittestEnabled": false,
+   "python.testing.nosetestsEnabled": false,
+   "python.testing.pytestEnabled": true,
+   "python.linting.pylintArgs": [
+      "--disable=no-self-use,relative-beyond-top-level"
+   ]
+}
