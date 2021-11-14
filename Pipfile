@@ -6,7 +6,6 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-restx = "*"
-pymysql = "*"
 python-dotenv = "*"
 flask-sqlalchemy = "*"
 flask-marshmallow = "*"
@@ -16,6 +15,8 @@ redis = "*"
 flask-cors = "*"
 flask-migrate = "*"
 cryptography = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 black = "==21.9b0"

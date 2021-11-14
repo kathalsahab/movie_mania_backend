@@ -1,8 +1,7 @@
 """Centralised location for all the DB Models
 """
 from sqlalchemy.orm import relationship
-from sqlalchemy.sql.expression import text
-
+from datetime import datetime
 # Third party imports
 from sqlalchemy import (
     Integer,
@@ -53,9 +52,9 @@ class Movies(db.Model):
     rating = Column(DECIMAL(10, 5))
     is_active = Column(Boolean, default=True)
     genre_id = Column(Integer, ForeignKey(Genre.genre_id), nullable=False)
-    created_date = Column(DateTime, server_default=text("CURRENT_TIMESTAMP"))
+    created_date = Column(DateTime, default=datetime.utcnow)
     modified_date = Column(
-        DateTime, server_default=text("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
+        DateTime, default=datetime.utcnow,onupdate=datetime.utcnow
     )
 
     genre = relationship("Genre", backref="movie", lazy=True)

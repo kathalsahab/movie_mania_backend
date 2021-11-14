@@ -2,7 +2,7 @@ from flask import Flask, Blueprint, jsonify, redirect
 from flask_restx import Api as RestX_Api
 from os import getenv
 from movie_list.commands import movie_list_cli
-import pymysql
+# import pymysql
 from movie_list import extensions
 from movie_list.ping.v1 import ping_api_v1
 from movie_list.movie.v1 import movie_api_v1
@@ -32,7 +32,7 @@ rest_api.add_namespace(ping_api_v1, path="/v1")
 rest_api.add_namespace(movie_api_v1, path="/v1")
 
 # mysql driver required for sqlalchemy
-pymysql.install_as_MySQLdb()
+# pymysql.install_as_MySQLdb()
 
 
 def create_app():
